@@ -8,7 +8,6 @@ use Rack::Static, :urls => ['/css', '/images']
 use Rack::Reloader
 use Rack::ShowExceptions
 
-# app better be defined in here!
 require 'picombo'
 
-run run_system()
+run Picombo::Loader.run
